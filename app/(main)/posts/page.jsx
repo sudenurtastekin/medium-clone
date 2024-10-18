@@ -17,13 +17,15 @@ export default async function PostsPage() {
       <h1>Tüm Gönderiler</h1>
       <ul>
         {posts.map(post => (
-          <div className="Posts">
-            <li key={post.id}>
-              <div className="posts-title"><a href={`/posts/${post.id}`}>{post.title}</a> <br /></div>
-                <div className="post-buttons">
-                  <LikeButton />
-                  <BookmarkButton />
-                </div>
+          <div className="Posts" key={post.id}>
+            <li>
+              <div className="posts-title">
+                <a href={`/posts/${post.id}`}>{post.title}</a> <br />
+              </div>
+              <div className="post-buttons">
+                <LikeButton />
+                <BookmarkButton />
+              </div>
             </li>
             <hr />
           </div>
@@ -31,4 +33,5 @@ export default async function PostsPage() {
       </ul>
     </div>
   );
+
 }
