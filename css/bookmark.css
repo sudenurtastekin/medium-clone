@@ -1,0 +1,57 @@
+h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.bookmarks-container {
+  width: 385px;
+  padding: 30px;
+  margin: 0 auto;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0;
+  }
+  li {
+    border: 1px solid #b8b8b8;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    color: black;
+  }
+  a {
+    font-size: 16px;
+    color: black;
+  }
+}
+
+@media(width >= 768px) {
+  .bookmarks-container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 50px;
+    ul{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+@media(width >= 1110px) {
+  .bookmarks-container {
+    width: 1440px;
+    margin: 0 auto;
+    ul{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    li {
+      cursor: pointer;
+    }
+  }
+}

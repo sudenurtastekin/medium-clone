@@ -1,0 +1,211 @@
+/* globals.css */
+body {
+  font-family: 'Helvetica', 'Times New Roman', Times, serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffff;
+}
+
+h1 {
+  font-family: 'Times New Roman', sans-serif;
+}
+
+p {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.likebtn {
+  display: flex;
+  gap: 5px;
+}
+
+.comment-list {
+  li {
+   gap: 10px;
+  }
+}
+
+.comment-svg {
+  margin-bottom: 50px;
+}
+
+.new-comments {
+  position: relative;
+  text-align: left;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #ffff;
+  transition: right 0.3s ease-in-out;
+  box-shadow: 9px 0 13px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow-y: auto;
+  font-family: 'Helvetica', sans-serif;
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.new-comments input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.new-comments {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  button {
+    padding: 2px 15px;
+    cursor: pointer;
+    height: 40px;
+  }
+}
+
+.yorum-gonder-btn {
+  background-color: #1e8c00;
+  color: #ffff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: 'Helvetica', sans-serif;
+  padding: 5px 5px;
+}
+
+strong {
+  font-family: 'Helvetica', sans-serif;
+  li {
+    font-family: 'Helvetica', sans-serif;
+
+  }
+}
+
+@media(width >= 1110px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -600px;
+    width: 600px;
+    height: 100%;
+    background-color: #ffff;
+    transition: right 0.3s ease-in-out;
+    box-shadow: 9px 0 13px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    overflow-y: auto;
+    font-family: 'Helvetica', sans-serif;
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .sidebar.open {
+    right: 0;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

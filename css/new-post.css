@@ -1,0 +1,111 @@
+.new-post-container {
+  max-width: 700px;
+  /* Daha dar bir konteyner */
+  margin: 50px auto;
+  /* Üstte daha fazla boşluk */
+  padding: 30px;
+  /* Daha fazla iç boşluk */
+  font-family: 'Georgia', serif;
+  /* Daha şık bir yazı tipi */
+  background-color: #fff;
+  /* Beyaz arka plan */
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  /* Daha büyük başlık */
+  margin-bottom: 30px;
+  /* Daha fazla boşluk */
+  color: #333;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-title {
+  padding: 15px;
+  border: 1px solid #ffff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+  text-align: left;
+}
+
+.input-title:focus {
+  border-color: #ffff;
+  outline: none;
+}
+
+.input-content {
+  padding: 15px;
+  border: 1px solid #ffff;
+  width: 600px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  min-height: 200px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+.input-content:focus {
+  border-color: #ffff;
+  outline: none;
+}
+
+.submit-button {
+  width: 130px;
+  background-color: #1e8c00;
+  color: #ffff;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.submit-button:hover {
+  background-color: #23a200;
+}
+
+textarea {
+  width: 600px;
+  height: 150px;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ffff;
+  border-radius: 5px;
+  font-size: 16px; 
+}
+
+input::placeholder {
+  color: #b8b8b8;
+}
+
+textarea::placeholder {
+  color: #b8b8b8;
+}
+
+@media(width <= 785px) {
+  textarea {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    font-size: 16px; 
+  }
+
+  .input-content {
+    padding: 15px;
+    border: 1px solid #ffff;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    min-height: 200px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+  }
+}
