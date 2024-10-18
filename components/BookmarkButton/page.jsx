@@ -1,4 +1,3 @@
-// components/BookmarkButton.jsx
 "use client";
 
 import { useEffect, useState } from "react";
