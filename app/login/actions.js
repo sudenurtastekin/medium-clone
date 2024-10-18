@@ -33,6 +33,6 @@ export async function loginAction(prevState, formData) {
     return;
   }
 
-  revalidatePath('/', 'layout')  // sayfayı yenilemeye gerek kalmadan ekran değiştiriyor server taraflı calisiyor
-  redirect('/')  // kullanıcı basarili bir sekilde giris yaparsa anasayfaya gonder.
+  revalidatePath('/', 'layout') 
+  redirect('/')  
 }
