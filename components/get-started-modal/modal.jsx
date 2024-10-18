@@ -33,7 +33,7 @@ export default function GetStartedModal() {
         <div className="desktop-nav">
           <li>Our Story</li>
           <li>Membership</li>
-          <li>Write</li>
+          <li><Link href={"/new-post"}> Write </Link> </li>
           <li><button onClick={handleLoginClick}>Sign in</button></li>
         </div>
         <li>
