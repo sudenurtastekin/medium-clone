@@ -17,7 +17,7 @@ export default async function MainHeader() {
     <header>
       <div className="Wrapper">
         <div className="LogoInput">
-          <h1>Medium</h1>
+          <h1 className="medium-logo"> <Link href={"/"}> Medium</Link> </h1>
  
         </div>
         {user ? (
