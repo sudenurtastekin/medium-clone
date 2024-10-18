@@ -40,6 +40,11 @@ p {
   margin: 0 auto;
 }
 
+.medium-logo{
+  color: #000;
+  text-decoration: none;
+}
+
 header .Wrapper {
   display: flex;
   align-items: center;

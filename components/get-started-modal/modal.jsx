@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import SignUpForm from "../signup-fom";
+import SignUpForm from "../signup-form";
 import LoginForm from "../login-form";
 
 export default function GetStartedModal() {
