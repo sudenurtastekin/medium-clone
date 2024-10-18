@@ -66,7 +66,7 @@ export default function GetStartedModal() {
                 <p>
                   Already have an account?{" "}
                   <button onClick={handleSignInClick} style={{ color: "#008000" }}>
-                    Login in
+                    Login
                   </button>
                 </p>
               </>

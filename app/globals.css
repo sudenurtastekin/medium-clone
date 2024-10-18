@@ -76,6 +76,81 @@ p {
   gap: 5px;
 }
 
+.Wrapper {
+  margin: 0 auto;
+  width: 385px;
+  padding: 20px 25px;
+}
+
+header .Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.userHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  & li {
+
+    & a {
+      color: #6B6B6B;
+    }
+  }
+
+  input {
+    background-color: #EAEBF0;
+  }
+}
+
+.get-started-btn {
+  width: 100px;
+  background-color: #6B6B6B;
+  border-radius: 20px;
+  padding: 5px 5px;
+  border: 2px solid #6B6B6B;
+  color: #ffff;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  input {
+    width: 250px;
+    padding: 5px 10px;
+    border: 1px solid #EAEBF0;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0px;
+  }
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 .comment-list {
   li {
    gap: 10px;
