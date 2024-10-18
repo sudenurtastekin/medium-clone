@@ -16,7 +16,6 @@ export async function signup(prevState, formData) {
 
   const errors = {};
 
-  // Hata kontrolü
   if (!data.firstName) {
     errors.firstName = "Ad kısmı boş olamaz";
   }
