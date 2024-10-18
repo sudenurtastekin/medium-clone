@@ -31,7 +31,7 @@ export default function SignUpForm() {
         {state?.errors?.email && (<small className="errorMessage">{state.errors.email}</small>)} <br />
         <input type="password" name="password" placeholder="*********" /> <br />
         {state?.errors?.password && (<small className="errorMessage">{state.errors.password}</small>)} <br />
-        <button className="signup-btn">Kayıt Ol</button>
+        <button className="signup-btn">Signup</button>
       </form>
     </>
   )
