@@ -49,7 +49,7 @@ export default function GetStartedModal() {
                 <h1>Welcome back.</h1>
                 <LoginForm />
                 <p>
-                  Don't have an account?{" "}
+                  Don&apos;t have an account?{" "}
                   <button onClick={() => setIsLoginForm(false)} style={{ color: "#008000" }}>
                     Sign up
                   </button>
