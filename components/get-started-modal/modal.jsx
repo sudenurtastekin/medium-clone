@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import SignUpForm from "../signup-fom";
 import LoginForm from "../login-form";
-import '@/css/get-started-cont.css';
 
 export default function GetStartedModal() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -13,6 +12,11 @@ export default function GetStartedModal() {
   const handleGetStartedClick = () => {
     setModalOpen(true);
     setIsLoginForm(false);
+  };
+
+  const handleLoginClick = () => {
+    setModalOpen(true);
+    setIsLoginForm(true);
   };
 
   const handleCloseModal = () => {
@@ -30,7 +34,7 @@ export default function GetStartedModal() {
           <li>Our Story</li>
           <li>Membership</li>
           <li>Write</li>
-          <li>Sign in</li>
+          <li><button onClick={handleLoginClick}>Sign in</button></li>
         </div>
         <li>
           <button className="get-started-btn" onClick={handleGetStartedClick}>Get Started</button>
@@ -43,13 +47,13 @@ export default function GetStartedModal() {
             <div className="close-btn">
               <button onClick={handleCloseModal}>X</button>
             </div>
-            
+
             {isLoginForm ? (
               <>
                 <h1>Welcome back.</h1>
                 <LoginForm />
                 <p>
-                  Don&apos;t have an account?{" "}
+                  Don't have an account?{" "}
                   <button onClick={() => setIsLoginForm(false)} style={{ color: "#008000" }}>
                     Sign up
                   </button>
