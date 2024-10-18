@@ -7,9 +7,6 @@ import "./showPost.css";
 
 export default async function PostDetailPage({ params }) {
   const supabase = createClient();
-  
-
-
   const { data: userData, error: userError } = await supabase.auth.getUser();
 
   if (userError) {
