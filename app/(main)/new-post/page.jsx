@@ -6,7 +6,8 @@ import { redirect } from "next/navigation";
 export default async function NewPost() {
   const supabase = createClient();
   const { data: { user } } = await supabase.auth.getUser();
-
+  console.log(user.user_metadata);
+  
   if (!user) {
     redirect('/login');
   }
